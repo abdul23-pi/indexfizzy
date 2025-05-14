@@ -1,0 +1,51 @@
+import React from "react"; import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button";
+
+export default function AbdulHafizAirport() { return ( <div className="min-h-screen bg-blue-50 text-gray-800"> <header className="bg-blue-900 text-white p-6 shadow-lg"> <h1 className="text-3xl font-bold">Abdulhafiz International Airport</h1> <nav className="mt-4 flex space-x-6 text-lg"> <a href="#home" className="hover:underline">Home</a> <a href="#about" className="hover:underline">About Us</a> <a href="#services" className="hover:underline">Services</a> <a href="#contact" className="hover:underline">Contact</a> </nav> </header>
+
+<section id="home" className="p-10 text-center">
+    <h2 className="text-4xl font-bold mb-4">Welcome to Abdulhafiz International Airport</h2>
+    <p className="text-lg max-w-2xl mx-auto">We offer world-class airport transport services and convenient airline ticketing options. Experience professional and seamless travel with us.</p>
+  </section>
+
+  <section id="about" className="bg-white p-10 text-center">
+    <h2 className="text-3xl font-semibold mb-4">About Us</h2>
+    <p className="text-lg max-w-3xl mx-auto">Abdulhafiz International Airport is committed to providing top-tier travel services. With a professional approach and customer-focused mindset, we aim to make your travel safe, fast, and comfortable.</p>
+  </section>
+
+  <section id="services" className="p-10 text-center bg-blue-100">
+    <h2 className="text-3xl font-semibold mb-4">Our Services</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <Card>
+        <CardContent className="p-6">
+          <h3 className="text-xl font-bold mb-2">Airport Transport</h3>
+          <p>Reliable and timely ground transport services to and from the airport.</p>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent className="p-6">
+          <h3 className="text-xl font-bold mb-2">Airline Ticketing</h3>
+          <p>Book domestic and international flights with ease through our platform.</p>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent className="p-6">
+          <h3 className="text-xl font-bold mb-2">Professional Travel Assistance</h3>
+          <p>Enjoy tailored support for your business and leisure travel needs.</p>
+        </CardContent>
+      </Card>
+    </div>
+  </section>
+
+  <section id="contact" className="bg-white p-10 text-center">
+    <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
+    <p className="text-lg">Email: <a href="mailto:abdulhafizabdulsalam2@gmail.com" className="text-blue-700">abdulhafizabdulsalam2@gmail.com</a></p>
+    <p className="text-lg">Phone: <a href="tel:08104247435" className="text-blue-700">08104247435</a></p>
+  </section>
+
+  <footer className="bg-blue-900 text-white p-6 text-center mt-10">
+    <p>&copy; {new Date().getFullYear()} Abdulhafiz International Airport. All rights reserved.</p>
+  </footer>
+</div>
+
+); }
+
